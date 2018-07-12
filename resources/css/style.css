@@ -144,7 +144,7 @@ footer{
 }
 
 /* For Tablets*/
-@media only screen and (max-width: 1024px){
+@media only screen and (min-width: 471px) and (max-width: 1024px){
   .pen,
   .watch{
     width: 47%
@@ -166,9 +166,33 @@ footer{
 
 /*For phones*/
 @media only screen and (max-width: 470px){
-  .items{
-    display: flex;
-    flex-wrap: wrap;
+  .pen{
+    width: 90%;
   }
 
+  .watch,
+  .glasses{
+    display: none;
+  }
+
+  h3{
+    font-family: Helvetica sans-serif;
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+
+  h1{
+    font-family: Helvetica sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .container{
+    display: none;
+  }
+
+  .mobile-nav{
+    display: block;
+    text-align: center;
+  }
 }
